@@ -99,11 +99,17 @@ seedPosition = itk.Index[Dimension]()
 seedPosition[0] = args.seed_x
 seedPosition[1] = args.seed_y
 
-node = itk.LevelSetNode[InputPixelType, Dimension]()
+NodeType = itk.LevelSetNode[InputPixelType, Dimension]
+
+node = NodeType()
 node.SetValue(seedValue)
 node.SetIndex(seedPosition)
 
-seeds = itk.VectorContainer[itk.UI, itk.LevelSetNode[InputPixelType, Dimension]].New()
+try:
+    NodeContainer = itk.VectorContainer[itk.IT, NodeType]  # ITK >= 6.0
+except TypeError:
+    NodeContainer = itk.VectorContainer[itk.UI, NodeType]  # ITK <= 5.4
+seeds = NodeContainer.New()
 seeds.Initialize()
 seeds.InsertElement(0, node)
 

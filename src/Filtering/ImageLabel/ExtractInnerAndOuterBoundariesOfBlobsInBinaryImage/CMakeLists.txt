@@ -24,6 +24,7 @@ if(ENABLE_QUICKVIEW)
       ITK::ITKCommonModule
       ITK::ITKImageIntensityModule
       ITK::ITKImageLabelModule
+      ITK::ITKVtkGlueModule
       ${VTK_LIBRARIES}
   )
 

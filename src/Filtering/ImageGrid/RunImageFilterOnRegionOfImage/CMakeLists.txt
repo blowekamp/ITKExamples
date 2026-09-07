@@ -27,6 +27,7 @@ if(ENABLE_QUICKVIEW)
       ITK::ITKImageGridModule
       ITK::ITKImageIntensityModule
       ITK::ITKSmoothingModule
+      ITK::ITKVtkGlueModule
       ${VTK_LIBRARIES}
   )
 

@@ -23,6 +23,7 @@ if(ENABLE_QUICKVIEW)
     PRIVATE
       ITK::ITKCommonModule
       ITK::ITKDistanceMapModule
+      ITK::ITKVtkGlueModule
       ${VTK_LIBRARIES}
   )
 

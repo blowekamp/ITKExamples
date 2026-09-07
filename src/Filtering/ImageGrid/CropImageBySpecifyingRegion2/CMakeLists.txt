@@ -25,6 +25,7 @@ if(ENABLE_QUICKVIEW)
       ITK::ITKImageIO
       ITK::ITKCommonModule
       ITK::ITKImageGridModule
+      ITK::ITKVtkGlueModule
       ${VTK_LIBRARIES}
   )
 

@@ -27,6 +27,7 @@ if(ENABLE_QUICKVIEW)
       ITK::ITKConnectedComponentsModule
       ITK::ITKImageIntensityModule
       ITK::ITKLabelMapModule
+      ITK::ITKVtkGlueModule
       ${VTK_LIBRARIES}
   )
 

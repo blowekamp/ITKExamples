@@ -25,6 +25,7 @@ if(ENABLE_QUICKVIEW)
       ITK::ITKCommonModule
       ITK::ITKCurvatureFlowModule
       ITK::ITKImageIntensityModule
+      ITK::ITKVtkGlueModule
       ${VTK_LIBRARIES}
   )
 

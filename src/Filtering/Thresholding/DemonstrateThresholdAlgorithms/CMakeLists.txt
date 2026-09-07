@@ -24,6 +24,7 @@ if(ENABLE_QUICKVIEW)
     PRIVATE
       ITK::ITKImageIO
       ITK::ITKThresholdingModule
+      ITK::ITKVtkGlueModule
       ${VTK_LIBRARIES}
   )
 

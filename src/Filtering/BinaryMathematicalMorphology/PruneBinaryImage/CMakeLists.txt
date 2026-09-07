@@ -25,6 +25,7 @@ if(ENABLE_QUICKVIEW)
       ITK::ITKBinaryMathematicalMorphologyModule
       ITK::ITKCommonModule
       ITK::ITKMathematicalMorphologyModule
+      ITK::ITKVtkGlueModule
       ${VTK_LIBRARIES}
   )
 

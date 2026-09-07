@@ -27,6 +27,7 @@ if(ENABLE_QUICKVIEW)
       ITK::ITKConnectedComponentsModule
       ITK::ITKImageFusionModule
       ITK::ITKImageStatisticsModule
+      ITK::ITKVtkGlueModule
       ${VTK_LIBRARIES}
   )
 

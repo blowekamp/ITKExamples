@@ -29,6 +29,7 @@ if(ENABLE_QUICKVIEW)
       ITK::ITKRegistrationCommonModule
       ITK::ITKSpatialObjectsModule
       ITK::ITKTransformModule
+      ITK::ITKVtkGlueModule
       ${VTK_LIBRARIES}
   )
 

@@ -15,20 +15,19 @@ find_package(
   ITK
   REQUIRED
   COMPONENTS
-    ITKImageBase
-    ITKAnisotropicSmoothingModule
-    ITKImageIntensityModule
+    ITKIOImageBase
+    ITKAnisotropicSmoothing
+    ITKImageIntensity
+    ITKImageIO
 )
 itk_generate_factory_registration()
 
 add_executable(${PROJECT_NAME} Code.cxx)
-message(STATUS "ITK_FACTORY_LIST: ${ITK_FACTORY_LIST}")
-message(STATUS "ITK_INTERFACE_LIBRARIES: ${ITK_INTERFACE_LIBRARIES}")
 target_link_libraries(
   ${PROJECT_NAME}
   PRIVATE
     ${ITK_INTERFACE_LIBRARIES}
-    ITKImageIO
+    ITK::ITKImageIO
 )
 
 install(

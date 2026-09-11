@@ -23,6 +23,7 @@ if(ENABLE_QUICKVIEW)
     PRIVATE
       ITK::ITKCommonModule
       ITK::ITKImageLabelModule
+      ITK::ITKVtkGlueModule
       ${VTK_LIBRARIES}
   )
 

@@ -10,6 +10,7 @@ target_link_libraries(
   ${PROJECT_NAME}
   PRIVATE
     ITK::ITKImageIO
+    ITK::ITKVtkGlueModule
     ITK::ITKConnectedComponentsModule
     ITK::ITKImageFusionModule
     ITK::ITKThresholdingModule

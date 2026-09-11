@@ -26,6 +26,7 @@ if(ENABLE_QUICKVIEW)
       ITK::ITKCommonModule
       ITK::ITKImageAdaptorsModule
       ITK::ITKImageFilterBaseModule
+      ITK::ITKVtkGlueModule
       ${VTK_LIBRARIES}
   )
 

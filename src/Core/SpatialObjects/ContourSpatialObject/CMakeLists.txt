@@ -23,6 +23,7 @@ if(ENABLE_QUICKVIEW)
     PRIVATE
       ITK::ITKImageIO
       ITK::ITKSpatialObjectsModule
+      ITK::ITKVtkGlueModule
       ${VTK_LIBRARIES}
   )
 

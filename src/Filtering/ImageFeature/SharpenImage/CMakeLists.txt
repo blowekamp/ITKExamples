@@ -11,6 +11,7 @@ target_link_libraries(
   PRIVATE
     ITK::ITKImageIO
     ITK::ITKCommonModule
+    ITK::ITKVtkGlueModule
     ITK::ITKImageFeatureModule
     ITK::ITKImageIntensityModule
 )

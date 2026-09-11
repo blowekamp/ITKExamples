@@ -24,6 +24,7 @@ if(ENABLE_QUICKVIEW)
       ITK::ITKColormapModule
       ITK::ITKCommonModule
       ITK::ITKConnectedComponentsModule
+      ITK::ITKVtkGlueModule
       ${VTK_LIBRARIES}
   )
 
